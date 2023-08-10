@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My Portfolio Webpage</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/bc515d25e6.js" crossorigin="anonymous"></script>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+
+
+    div.container-fluid{
+        padding:2% 10%;
+      }
+      
+      h1{
+      font-family: 'Montserrat' ,'sans-serif';
+      font-size: 2rem;
+      line-height: 1.5rem;
+      color:white;
+      }
+      
+      h2{
+        line-height: 1.5;
+      }
+      
+      p{
+        color:#fff;
+      }
+      #title{
+          
+        padding: 15px;
+        background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+        color:#fff;
+      }
+      .navbar{
+        padding:0 0 4.5rem;
+      }
+      .nav-item{
+        padding:0 18px;
+      }
+      .navbar-brand{
+        font-size: 5rem;
+        font-weight: bold;
+      }
+      
+      .nav-link{
+        font-size: 1.2rem;
+        font-family:"Montserrat-Light";
+      }
+      .download-button{
+        margin:5% 3% 5% 0%;
+      }
+      
+      .title-img1{
+        padding-left:50px;
+        width:100%;
+        
+      }
+      .title-img2{
+        padding-left:50px;
+        width:60%;
+        transform: rotate(0deg);
+      }
+      .title-img3{
+        padding-right: 10px;
+        width:45%;
+        margin-right: -50px;
+        transform: rotate(25deg);
+      }
+      #container-new{
+        margin-top:120px;
+        height: 67vh;
+      }
+      
+      #features{
+       padding:7% 15%;
+       background-image:linear-gradient(#19bcfc,#1aee99);
+      
+      }
+      .feature-box{
+        text-align: center;
+      }
+      .icon{
+        color:#004d7a ;
+        margin-bottom: 1.5rem;
+      }
+      .icon:hover{
+        color:#00bf72;
+      }
+      #testimonials{
+      
+      text-align: center;
+       padding-top: 2px;
+       padding-bottom: 2px;
+       background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+       color: #fff;
+      }
+      .testimonials-img{
+        width: 40%;
+        border-radius: 50px;
+        margin: 30px;
+      }
+      .carousel-item{
+        padding: 7% 15%;
+      }
+      #press{
+        background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+        text-align: center;
+        padding-bottom:3%;
+      }
+      .press-logo{
+        width: 15%;
+        margin:20px 20px 20px 50px;
+      }
+      #pricing{
+       padding:100px;
+       text-align: center;
+      }
+      
+      .pricing-column{
+        padding: 3% 2%;
+      }
+      
+      
+      /* CTA SECTION */
+      #cta{
+        /* background-color: #ff4c68; */
+        /* background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);  */
+        background-image:linear-gradient(#d7f0fa,#b0fbdd);
+      
+        color:#000;
+        padding: 7% 15%;
+        text-align: center;
+      }
+      
+      #footer{
+         background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12); 
+       
+      }
+      
+      .cta_button{
+        color: #004d7a;
+      }
+      
+      .cta-heading{
+        font-family: "Montserrat-Black";
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+      @media (max-width:1000px){
+        #title{
+          text-align: center;
+        }
+        .title-img{
+          padding-top: 20px;
+          position:static;
+          transform: rotate(0);
+        }
+      }
+      #footer{
+        padding:7% 15%;
+        text-align: center;
+      }
+      .social-icon {
+        margin:20px 10px;
+        color:black;
+      }
+      
+      .social-icon:hover{
+        color: #fff;
+      }
+      
+      hr{
+        width: 100%;
+        border:10px solid white;
+      }
+      
+      
+      /* Blinking Text */
+      
+      
+      .wrapper{
+        display: inline-flex;
+      }
+      .wrapper .static-text{
+        color: white;
+        font-size:60px;
+        font-weight: 200;
+        font-family: 'Montserrat' ,'sans-serif';
+      
+      }
+      
+      .wrapper .dynamic-texts{
+        margin-left: 15px;
+        line-height: 90px;
+        height: 90px;
+        overflow: hidden;
+        font-family: 'Montserrat-Light' ,'sans-serif';
+      
+      }
+      
+      .dynamic-texts li{
+        color: white;
+        list-style: none;
+        font-size: 60px;
+        font-weight: 500;
+        position: relative;
+        top: 0;
+        animation: slide 6s steps(4) infinite;
+      
+      }
+      
+      @keyframes slide {
+        100%{
+            top: -360px;
+        }
+      }
+      
+      
+      .dynamic-texts li span{
+        position:relative;
+      }
+      
+      
+      .dynamic-texts li span::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-left: 3px solid transparent;
+        animation: typing 1.5s steps(13) infinite;
+      }
+      
+      @keyframes typing {
+        100%{
+            left: 100%;
+            margin: 0 -35px 0 35px;
+        }
+      }
+      
+      /* Shadow */
+     
+      
+      
+      .box1{
+        height:85vh;
+        width:85%;
+        margin: 4% 8%;
+        background: rgba(255,255,255,0.1);
+        z-index:10;
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,0.7);
+        backdrop-filter: blur(25px);
+        box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+      }
+      
+      .box2{
+        height:75vh;
+        width:85%;
+        margin: 4% 8%;
+        background: rgba(255,255,255,0.1);
+        z-index:10;
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,0.7);
+        backdrop-filter: blur(25px);
+        box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+      }
+      
+      .box3{
+        height:10vh;
+        width:30%;
+        margin: 4% 8%;
+        background: rgba(255,255,255,0.1);
+        z-index:10;
+        display: flex;
+        position: relative;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,0.7);
+        backdrop-filter: blur(25px);
+        box-shadow: -15px 17px 17px rgba(10,10,10,0.25);
+      }
+    
+    </style>
+    
+
+<body>
+
+  <section id="title">
+    <div class="box1">
+    <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand" href="">Portfolio</a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-items">
+               <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-items">
+               <a class="nav-link" href="#testimonials">Works</a>
+            </li>
+            <li class="nav-items">
+               <a class="nav-link" href="#cta">Download</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  
+
+        <div class="row" id="container-new">
+            <div class="col-lg-7 ">
+              <h1>Hii <br>I'm SAIRAM KINJARAPU</h1>
+              <div class="wrapper">
+                <div class="static-text">A</div>
+                <div>
+                 <ul class="dynamic-texts">
+                    <li><span>Web Developer</span></li>
+                    <li><span>Programmer</span></li>
+                    <li><span>Designer</span></li>
+                    <li><span>Developer</span></li>
+                </ul></div>
+            </div>
+              
+           </div>
+          <div class="col-lg-5" >
+            <img src="sairam.jpg" class="title-img1">
+          </div>
+  </div>
+  </div>
+  </div>
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4 col-md-6">
+        <i class="icon fa-solid fa-laptop-code fa-4x"></i>
+        <h3>Coding.</h3>
+        <h6>Intrested to solve problems.</h6>
+      </div>
+
+         <div class="feature-box col-lg-4 col-md-6">
+          <i class="icon fa-brands fa-html5 fa-4x"></i>
+          <i class="icon fa-brands fa-css3-alt fa-4x"></i>
+          <i class="icon fa-brands fa-js fa-4x"></i>
+           <h3>Building web pages</h3>
+           <h6>Intrested to build webpages.</h6>
+         </div>
+
+         <div class="feature-box col-lg-4 col-md-6">
+           <i class="icon fa-solid fa-gamepad fa-4x"></i>
+            <h3>Games and Sports</h3>
+           <h6>Love playing Cricket </h6>
+         </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide box2" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+
+
+          <h2 class="testimonial-text">Developed a frontend web site named Booly-Online book store<u><Strong>Book Purchase</Strong></u> using Web Technoligies</h2>
+          <img class="testimonials-img" src="FSWD.png" alt="dog-profile"><br>
+          <em>Web Development</em>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <h2 class="testimonial-text">A mini project on Database Management Systems. <br>This will used to store and retrive data for Student database.</h2>
+        <img class="testimonials-img" src="Dbms.png" alt="dbms-profile"><br>
+        <em>Data Base Management System</em>
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <h2 class="testimonial-text">Completed SalesForce Developer Internship</h2>
+        <img class="testimonials-img" src="sales_force.png" alt=""><br>
+        <em>Salesforce Developer</em>
+      </div>
+      </div>
+     
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span> </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span> </a>
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+    </div>
+   
+  </section>
+
+  </section>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+    <h3 class="cta-heading">Download Resume</h3>
+    <a href="./RESUME2.pdf" download="" class="btn btn-lg btn-dark download-button cta_button"><i class="fa-solid fa-file-arrow-down"></i>  Resume</a>
+    <button class="btn btn-lg btn-light  download-button"  type="button"><i class="fa-solid fa-handshake"></i>  Hire Me</button>
+    <!-- <i class="fa-brands fa-apple"></i> -->
+  </section>
+
+
+  <!-- Footer -->
+
+<footer id="footer">
+  <a href="mailto:sairamkinjarapu119@gmail.com"><i class="social-icon  fa-solid fa-envelope fa-2x"></i></a>
+  <a href="#"><i class="social-icon  fa-brands fa-twitter fa-2x"></i></a>
+ <i class="social-icon  fa-brands fa-square-instagram fa-2x"></i>
+ <i class="social-icon  fa-brands fa-facebook fa-2x"></i>
+
+<p>© Copyright SAI RAM KINJARAPU</p>
+</footer>
+<!--  -->
+
+</body>
+
+</html>
